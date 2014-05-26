@@ -2,19 +2,19 @@
 #  Hi fellow coursera students:
 *  My first step for the script run_analysis.R ,was extacting the folder UCI HAR Dataset, and put it into  my current directory.and:
 * 1: setting a new directory that adds the new folder like this:
-     setwd(paste0(getwd(),/UCI HAR Dataset"))
+*        setwd(paste0(getwd(),/UCI HAR Dataset"))
 * 2: read features and activity labels from my working directory
 * 3: read X_train.txt file from "train" folder and put it in train.data variable
 * 4: read X_test.txt  file from "test"  folder and put it in test.data  variable
 * 5: combine train.data and test.data using rbind function and put it in cmbdata :
-    like this  cmbdata <- rbind(train.data,test.data)
+*       cmbdata <- rbind(train.data,test.data)
 * 6:S ubset the combined table cmbdata to get mean and standerd deviation related 
-    variables (table columns).Here i i used the grepl function this way:
-    names(cmbdata) <- features[,2]
-*    bool1 <- grepl ("mean()",names(cmbdata))
-*   bool2 <- grepl ("std()",names(cmbdata))
-*   bool3 <- bool1|bool2
-*   subcmbdata <- cmbdata[],bool3]
+    variables (table/columns).Here i used the grepl function this way:
+*        names(cmbdata) <- features[,2]
+*        bool1 <- grepl ("mean()",names(cmbdata))
+*        bool2 <- grepl ("std()",names(cmbdata))
+*        bool3 <- bool1|bool2
+*        subcmbdata <- cmbdata[],bool3]
 * 7: Removed "()" and "_" from all variables and replaced them with "" and "." by 
     using gsub
 * 8: Added subject and activity labels to the combened cleaned data ,to do this 

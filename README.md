@@ -1,5 +1,5 @@
 *  README.md 
-   Hi fellow coursera students:
+*   Hi fellow coursera students:
 *  My first step for the script run_analysis.R ,was extacting the folder UCI HAR Dataset, and put it into  my current directory.and:
 * 1: setting a new directory that adds the new folder like this:
 *        setwd(paste0(getwd(),/UCI HAR Dataset"))

@@ -1,5 +1,5 @@
-# README.md 
-#  Hi fellow coursera students:
+*  README.md 
+   Hi fellow coursera students:
 *  My first step for the script run_analysis.R ,was extacting the folder UCI HAR Dataset, and put it into  my current directory.and:
 * 1: setting a new directory that adds the new folder like this:
 *        setwd(paste0(getwd(),/UCI HAR Dataset"))
@@ -46,7 +46,7 @@
 *    each activity (mean of the means) by using the aggregate function like this:
 *    mytidy1 <- aggregate(mydata,by=list(mydata$subject,mydata$activity),FUN=mean)
 
-*    * aggregate() adds two columns "Group.1" and "Group.2" for a readable table i 
+*      aggregate() adds two columns "Group.1" and "Group.2" for a readable table i 
      removed them.
 * 10: I renamed the numeric activity labels with real names like this :
 *     mytidy1$activity[mytidy1$actvity==1] <- "waliking"

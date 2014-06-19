@@ -1,4 +1,4 @@
--1:  VARIABLES DESCRIPTION:
+-1:   VARIABLES  DESCRIPTION:
 activity : Activities performed by each subject ,range from 1 to 6
            walking
            walkup

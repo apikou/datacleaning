@@ -1,4 +1,4 @@
-#script ; run_analysis.R
+# script : run_analysis.R
 # Folder "UCI HAR Dtaset",(which contains 3 files and 2 folders) is extracted ,
 # and put into my current directory,and i added this folder to the path to get  
 # a new working directory this way :

@@ -20,16 +20,16 @@
 
 *        bool3 <- bool1|bool2
 
-*        subcmbdata <- cmbdata[],bool3]
+*        subcmbdata <- cmbdata[,bool3]
 
 * 7: Removed "()" and "_" from all variables and replaced them with "" and "." by 
     using gsub
 * 8: Added subject and activity labels to the combened cleaned data ,to do this 
-*     * read the files subject_train.txt and Y_train.txt from "train" folder
-*     * read the files subject_test.txt  and Y_test.txt from  "test" folder
-*     * to make R run faster i added nrows and colClass stringsAsFactors arguments
-*    * combined subjects from train and test
-*     * combined activities from train and test
+*       read the files subject_train.txt and Y_train.txt from "train" folder
+*       read the files subject_test.txt  and Y_test.txt from  "test" folder
+*       to make R run faster i added nrows and colClass stringsAsFactors arguments
+*       combined subjects from train and test
+*       combined activities from train and test
 *    like this :
 *     activity <- rbind ( activitytr,activityts )
 
@@ -46,14 +46,14 @@
 *    each activity (mean of the means) by using the aggregate function like this:
 *    mytidy1 <- aggregate(mydata,by=list(mydata$subject,mydata$activity),FUN=mean)
 
-*      aggregate() adds two columns "Group.1" and "Group.2" for a readable table i 
-     removed them.
+*    aggregate() adds two columns "Group.1" and "Group.2" ,for a more readable table i 
+      did  remove them.
 * 10: I renamed the numeric activity labels with real names like this :
 *     mytidy1$activity[mytidy1$actvity==1] <- "waliking"
   
 *     ........same for other codes 2,3,4,5,6 
 * 11: Finally i write the content of my tidy table (mytidy1) into a file called 
-      mytidy1.txt without row names no quotes and number in a scientific format
+      mytidy1.txt  in a scientific format , row names=FALSE, quotes=FALSE 
 * 12: Force R to go back to the first directory where "UCI HAR Dataset" was   
       extracted , and this to be able to make fresh R runs.
 * 13: Thanks for your time and thanks coursera for the opportunity.    

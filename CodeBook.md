@@ -105,4 +105,5 @@ The means and standard deviations  variables used in  tidy data  were estimated 
 * I just replaced some special characters that may cause problems for R to run correctly by using R function gsub
 I removed "()" and "_", and replaced them with a "" and "."
 * I also renamed the numeric activity labels with names :instead of having actvity named ("1","2","3","4","5","6") ,i changed it to (walking,walkup,walksown,sitting,standind,laying).   
-
+* I kept the upper case notations because for me it meaningful. 
+-3: After the aggregation the variables in my tidy data  are now averages (the 79 variables above)

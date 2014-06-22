@@ -34,7 +34,6 @@
 *     activity <- rbind ( activitytr,activityts )
 
 *     subject  <- rbind (subjecttr,subjectts )
-
 *     and finally add all these blocks to make a complete table with subject and   
 *     activity columns and the features variables by using cbind() like this :
 *     mydata <- cbind ("subject""actuvity",subcmbdata)
@@ -48,8 +47,9 @@
 
 *    aggregate() adds two columns "Group.1" and "Group.2" ,for a more readable table i 
       did  remove them.
+*    The variables in my tidy data are now averages. 
 * 10: I renamed the numeric activity labels with real names like this :
-*     mytidy1$activity[mytidy1$actvity==1] <- "waliking"
+*     mytidy1$activity[mytidy1$actvity==1] <- "walking"
   
 *     ........same for other codes 2,3,4,5,6 
 * 11: Finally i write the content of my tidy table (mytidy1) into a file called 
